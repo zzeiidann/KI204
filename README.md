@@ -10,26 +10,6 @@ This project demonstrates:
 - Rust REST API using Axum and tch-rs for efficient inference
 - Performance evaluation comparing baseline and quantized models
 
-## Project Structure
-
-```
-KI204/
-├── scripts/
-│   └── main.ipynb              # Jupyter notebook for model export
-├── quantized_llm_service/      # Rust service implementation
-│   ├── src/
-│   │   ├── config.rs           # Configuration management
-│   │   ├── error.rs            # Error handling
-│   │   ├── model/              # Model loading and inference
-│   │   ├── quantization.rs     # Quantization utilities
-│   │   ├── evaluation.rs       # Benchmarking tools
-│   │   └── server.rs           # REST API endpoints
-│   ├── models/                 # Model artifacts (generated)
-│   └── Cargo.toml
-├── test_service.sh             # API test script
-└── README.md
-```
-
 ## Setup
 
 ### Prerequisites
