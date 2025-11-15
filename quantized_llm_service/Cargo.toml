@@ -1,0 +1,24 @@
+[package]
+name = "quantized_llm_service"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = ["tch-backend"]
+tch-backend = ["tch"]
+
+[dependencies]
+axum = { version = "0.7", features = ["macros"] }
+tokio = { version = "1.39", features = ["rt-multi-thread", "macros"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "1.0"
+parking_lot = "0.12"
+once_cell = "1.19"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tower-http = { version = "0.5", features = ["trace", "cors"] }
+async-trait = "0.1"
+tokenizers = { version = "0.15", default-features = false, features = ["http", "onig"] }
+tch = { version = "0.20", optional = true, features = ["download-libtorch"] }

@@ -1,0 +1,5 @@
+{
+  "baseline_module": "/Users/mraffyzeidan/Learning/KI204/quantized_llm_service/models/distilgpt2_baseline.ts",
+  "quantized_module": "/Users/mraffyzeidan/Learning/KI204/quantized_llm_service/models/distilgpt2_quantized.ts",
+  "tokenizer_dir": "/Users/mraffyzeidan/Learning/KI204/quantized_llm_service/models"
+}

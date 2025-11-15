@@ -1,0 +1,2 @@
+[env]
+LIBTORCH_CXX11_ABI = "1"
